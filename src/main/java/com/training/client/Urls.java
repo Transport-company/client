@@ -1,7 +1,7 @@
 package com.training.client;
 
 public interface Urls {
-    String ROOT = "/";
+    String ROOT = "";
 
     interface Tracking {
         String PART = "tracking";
