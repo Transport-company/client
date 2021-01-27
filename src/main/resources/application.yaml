@@ -1,0 +1,11 @@
+server:
+  servlet:
+    context-path: /api/v1/client
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 3000
+        readTimeout: 3000
+        loggerLevel: full

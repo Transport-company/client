@@ -1,8 +1,11 @@
 package com.training.client.controller;
 
-import org.springframework.cloud.openfeign.FeignClient;
+import com.training.client.Urls;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@FeignClient(name = "tracking", url = "http://api/v1/core/tracking")
+@RestController
+@RequestMapping(Urls.Tracking.FULL)
 public interface TrackingControllerFeign extends TrackingController {
 
 }
