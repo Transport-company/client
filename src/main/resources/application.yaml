@@ -2,10 +2,10 @@ server:
   servlet:
     context-path: /api/v1/client
 
-feign:
-  client:
-    config:
-      default:
-        connectTimeout: 3000
-        readTimeout: 3000
-        loggerLevel: full
+
+#properties:
+#  connection-timeout: 3000
+#  read-timeout: 3000
+#  url: /api/v1/client
+
+coreTrackingAPIUrl: localhost:8080
